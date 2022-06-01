@@ -1,0 +1,53 @@
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Delegate User</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+
+<div class="form-group">
+  <label for="userDataList" class="form-label">Select an Users</label>
+  <input class="form-control" list="datalistOptions" id="userDataList" placeholder="Type to search...">
+  <datalist id="datalistOptions">
+    <option value="Jensen Bennett">
+    <option value="Lindsay Castaneda">
+    <option value="Katherine Metcalfe">
+    <option value="Kairon Whitehouse">
+    <option value="Vincenzo Sutherland">
+    <option value="Bridie Donovan">
+  </datalist>
+</div>
+
+<div class="form-group">
+  <label class="form-label">Select Reason</label>
+  <select class="form-select form-control" id="reasonSelect">
+    <option selected>Open this select reason</option>
+    <option value="1">Reason one</option>
+    <option value="2">Reason two</option>
+    <option value="3">Reason three</option>
+    <option value="4">Reason four</option>
+    <option value="5">Reason five</option>
+    <option value="other">Others</option>
+  </select>
+</div>
+
+<div class="form-group otherreason-field" id="other" style="display: none;">
+  <label class="form-label">Other Reason</label>
+  <textarea type="text" class="form-control" rows="4"></textarea>
+</div>
+
+
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <button type="button" class="btn btn-primary">Submit</button>
+</div>
+
+
+<script>
+$(function() {
+  $('#reasonSelect').change(function(){
+      $('.otherreason-field').hide();
+      $('#' + $(this).val()).show();
+  });
+});  
+</script>

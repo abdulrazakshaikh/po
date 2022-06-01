@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="img/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Icon Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+    <title>History</title>
+  </head>
+  <body>
+
+  <nav class="navbar navbar-dark bg-dark navbar-header navbar-expand" aria-label="First navbar example">
+    <div class="container-fluid h-100">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/Icrux-Logo.png" class="img-fluid" alt="">
+      </a>
+      <ul class="navbar-nav ms-auto h-100">
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-account dropdown-toggle" href="javascript:void(0)" id="dropdownnotification" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="material-icons-outlined">notifications</span>
+            </a>
+            <div class="dropdown-menu noti-dropdown dropdown-menu-end" aria-labelledby="dropdownnotification">
+              <div class="noti-header">
+                <h6 class="noti-header-title">Notification</h6>
+                <button class="btn btn-sm btn-clear">Clear All</button>
+              </div>
+              <div class="noti-body scroll-list">
+                <ul class="list-unstyled noti-list">
+                  <li class="noti-list-item">
+                    <a href="details.html" class="noti-item-link">
+                      <span class="noti-ordernum">Order No. : #5281-OP-00200</span>
+                      <p class="noti-text"><span class="user">Jensen Bennett</span> has requested for Approval for the order.</p>
+                    </a>
+                  </li>
+                  <li class="noti-list-item">
+                    <a href="details.html" class="noti-item-link">
+                      <span class="noti-ordernum">Order No. : #5201-OP-00100</span>
+                      <p class="noti-text"><span class="user">Lindsay Castaneda</span> has delegated the order to you</p>
+                    </a>
+                  </li>
+                  <li class="noti-list-item">
+                    <a href="details.html" class="noti-item-link">
+                      <span class="noti-ordernum">Order No. : #4181-OP-00400</span>
+                      <p class="noti-text"><span class="user">Vincenzo Sutherland</span> has requested for Approval for the order</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="noti-footer">
+                <a class="btn btn-viewall" href="#">View All</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-account dropdown-toggle" href="javascript:void(0)" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="account-user-avatar"> 
+                <img src="img/default-avatar.jpg" alt="user-image" class="">
+              </span>
+              <span class="account-user-inner">
+                <span class="account-user-name">Dominic Keller</span>
+                <span class="account-position">Founder</span>
+              </span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown03">
+              <li><a class="dropdown-item" href="#">Accounts</a></li>
+              <li><a class="dropdown-item" href="#">Preferences</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">
+                <span class="material-icons-outlined me-2 fs-5">logout</span>
+                Logout
+              </a></li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+  </nav>
+
+
+  <div class="contentWrap">
+
+    <div class="page-heading">
+      <div class="page-heading-inner">
+        <h6 class="page-title">Awaiting Approval Purchase Orders</h6>
+        <nav style="--bs-breadcrumb-divider: '\e409';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="awaiting-approval.html">Awaiting Approval</a></li>
+            <li class="breadcrumb-item active" aria-current="page">#5281-OP-00200</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="contentInnerWrap">
+      <!-- <h3 class="display-3">#5281-OP-00200</h3> -->
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <div class="card history-card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-12">
+                  <div class="invoice-informationitem mb-0">
+                    <span class="invoice-informationitemlabel text-uppercase">Order Id :</span>
+                    <span class="invoice-informationitemtext order-num fw-bold">#5281-OP-00200</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+
+              <div class="timeline-wrapper">
+
+                <ul class="timeline-list" id="accordionHistory">
+                  <li class="timeline-item">
+                    <div class="timeline-inner card">
+                      <div class="card-header bg-white" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="invoice-informationitem mb-0">
+                          <span class="invoice-informationitemlabel">Activity Date :</span>
+                          <span class="invoice-informationitemtext">30Nov, 2021</span>
+                        </div>
+                        <div class="activity-status bg-red">
+                          <h6 class="activity-status-text">Rejected</h6>
+                        </div>
+                      </div>
+                      <div id="collapseOne" class="card-body collapse show" data-bs-parent="#accordionHistory">
+                        <ul class="list-group list-group-numbered approver-list-group list-group-flush">
+                          <li class="list-group-item approver-list-group-item">
+                            <div class="approver-list-group-inner">
+                              <div class="approver-list-group-header">
+                                <h6 class="timeline-approvername">Kairon Whitehouse </h6>
+                                <span class="badge timeline-approverstatus bg-red">Rejected</span>
+                              </div>
+                              <div class="approver-list-group-body">
+                                <p class="timeline-approvernotes">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Delectus, quas, ipsum distinctio voluptas error aut minima ipsa ullam aperiam dolore. Sed possimus.</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item approver-list-group-item">
+                            <div class="approver-list-group-inner">
+                              <div class="approver-list-group-header">
+                                <h6 class="timeline-approvername">Lindsay Castaneda</h6>
+                                <span class="badge timeline-approverstatus bg-green">Approved</span>
+                              </div>
+                              <div class="approver-list-group-body">
+                                <p class="timeline-approvernotes">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Delectus, quas, ipsum distinctio</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item approver-list-group-item">
+                            <div class="approver-list-group-inner">
+                              <div class="approver-list-group-header">
+                                <h6 class="timeline-approvername">Bridie Donovan</h6>
+                                <span class="badge timeline-approverstatus bg-red">Rejected</span>
+                              </div>
+                              <div class="approver-list-group-body">
+                                <p class="timeline-approvernotes">Lorem ipsum dolor sit amet, consectetur, adipisicing elit..</p>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="timeline-item">
+                    <div class="timeline-inner card">
+                      <div class="card-header bg-white" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="invoice-informationitem mb-0">
+                          <span class="invoice-informationitemlabel">Activity Date :</span>
+                          <span class="invoice-informationitemtext">3Dec, 2021</span>
+                        </div>
+                        <div class="activity-status bg-red">
+                          <h6 class="activity-status-text">Rejected</h6>
+                        </div>
+                      </div>
+                      <div id="collapseTwo" class="card-body collapse" data-bs-parent="#accordionHistory">
+                        <ul class="list-group list-group-numbered approver-list-group list-group-flush">
+                          <li class="list-group-item approver-list-group-item">
+                            <div class="approver-list-group-inner">
+                              <div class="approver-list-group-header">
+                                <h6 class="timeline-approvername">Kairon Whitehouse </h6>
+                                <span class="badge timeline-approverstatus bg-red">Rejected</span>
+                              </div>
+                              <div class="approver-list-group-body">
+                                <p class="timeline-approvernotes">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Delectus, quas, ipsum distinctio voluptas error aut minima ipsa ullam aperiam dolore. Sed possimus.</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item approver-list-group-item">
+                            <div class="approver-list-group-inner">
+                              <div class="approver-list-group-header">
+                                <h6 class="timeline-approvername">Vincenzo Sutherland</h6>
+                                <span class="badge timeline-approverstatus bg-orange">Delegate</span>
+                              </div>
+                              <div class="approver-list-group-body">
+                                <div class="timeline-informationitem">
+                                  <span class="timeline-informationitemlabel">Deligated to :</span>
+                                  <span class="timeline-informationitemtext">Lindsay Castaneda</span>
+                                </div>
+                                <div class="timeline-informationitem">
+                                  <span class="timeline-informationitemlabel">Reason to Deligate:</span>
+                                  <span class="timeline-informationitemtext">Not Feeling Well</span>
+                                </div>
+                                <!-- <p class="timeline-approvernotes">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Delectus, quas, ipsum distinctio</p> -->
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item approver-list-group-item">
+                            <div class="approver-list-group-inner">
+                              <div class="approver-list-group-header">
+                                <h6 class="timeline-approvername">Bridie Donovan</h6>
+                                <span class="badge timeline-approverstatus bg-red">Rejected</span>
+                              </div>
+                              <div class="approver-list-group-body">
+                                <p class="timeline-approvernotes">Lorem ipsum dolor sit amet, consectetur, adipisicing elit..</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item approver-list-group-item">
+                            <div class="approver-list-group-inner">
+                              <div class="approver-list-group-header">
+                                <h6 class="timeline-approvername">Lindsay Castaneda</h6>
+                                <span class="badge timeline-approverstatus bg-green">Approved</span>
+                              </div>
+                              <div class="approver-list-group-body">
+                                <p class="timeline-approvernotes">Lorem ipsum dolor sit amet, consectetur, adipisicing elit..</p>
+                              </div>
+                            </div>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="timeline-item">
+                    <div class="timeline-inner card">
+                      <div class="card-header bg-white" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="invoice-informationitem mb-0">
+                          <span class="invoice-informationitemlabel">Activity Date :</span>
+                          <span class="invoice-informationitemtext">10Dec, 2021</span>
+                        </div>
+                        <div class="activity-status bg-green">
+                          <h6 class="activity-status-text">Approved</h6>
+                        </div>
+                      </div>
+                      <div id="collapseThree" class="card-body collapse" data-bs-parent="#accordionHistory">
+                        <ul class="list-group list-group-numbered approver-list-group list-group-flush">
+                          <li class="list-group-item approver-list-group-item">
+                            <div class="approver-list-group-inner">
+                              <div class="approver-list-group-header">
+                                <h6 class="timeline-approvername">Kairon Whitehouse </h6>
+                                <span class="badge timeline-approverstatus bg-green">Approved</span>
+                              </div>
+                              <div class="approver-list-group-body">
+                                <p class="timeline-approvernotes">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Delectus, quas, ipsum distinctio voluptas error aut minima ipsa ullam aperiam dolore. Sed possimus.</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item approver-list-group-item">
+                            <div class="approver-list-group-inner">
+                              <div class="approver-list-group-header">
+                                <h6 class="timeline-approvername">Lindsay Castaneda</h6>
+                                <span class="badge timeline-approverstatus bg-green">Approved</span>
+                              </div>
+                              <div class="approver-list-group-body">
+                                <p class="timeline-approvernotes">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Delectus, quas, ipsum distinctio</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item approver-list-group-item">
+                            <div class="approver-list-group-inner">
+                              <div class="approver-list-group-header">
+                                <h6 class="timeline-approvername">Bridie Donovan</h6>
+                                <span class="badge timeline-approverstatus bg-green">Approved</span>
+                              </div>
+                              <div class="approver-list-group-body">
+                                <p class="timeline-approvernotes">Lorem ipsum dolor sit amet, consectetur, adipisicing elit..</p>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

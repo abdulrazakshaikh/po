@@ -1,0 +1,915 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="img/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Icon Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+    <title>Awaiting Approval</title>
+  </head>
+  <body>
+
+  <nav class="navbar navbar-dark bg-dark navbar-header navbar-expand" aria-label="First navbar example">
+    <div class="container-fluid h-100">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/Icrux-Logo.png" class="img-fluid" alt="">
+      </a>
+      <ul class="navbar-nav ms-auto h-100">
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-account dropdown-toggle" href="javascript:void(0)" id="dropdownnotification" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="material-icons-outlined">notifications</span>
+            </a>
+            <div class="dropdown-menu noti-dropdown dropdown-menu-end" aria-labelledby="dropdownnotification">
+              <div class="noti-header">
+                <h6 class="noti-header-title">Notification</h6>
+                <button class="btn btn-sm btn-clear">Clear All</button>
+              </div>
+              <div class="noti-body scroll-list">
+                <ul class="list-unstyled noti-list">
+                  <li class="noti-list-item">
+                    <a href="details.html" class="noti-item-link">
+                      <span class="noti-ordernum">Order No. : #5281-OP-00200</span>
+                      <p class="noti-text"><span class="user">Jensen Bennett</span> has requested for Approval for the order.</p>
+                    </a>
+                  </li>
+                  <li class="noti-list-item">
+                    <a href="details.html" class="noti-item-link">
+                      <span class="noti-ordernum">Order No. : #5201-OP-00100</span>
+                      <p class="noti-text"><span class="user">Lindsay Castaneda</span> has delegated the order to you</p>
+                    </a>
+                  </li>
+                  <li class="noti-list-item">
+                    <a href="details.html" class="noti-item-link">
+                      <span class="noti-ordernum">Order No. : #4181-OP-00400</span>
+                      <p class="noti-text"><span class="user">Vincenzo Sutherland</span> has requested for Approval for the order</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="noti-footer">
+                <a class="btn btn-viewall" href="#">View All</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-account dropdown-toggle" href="javascript:void(0)" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="account-user-avatar"> 
+                <img src="img/default-avatar.jpg" alt="user-image" class="">
+              </span>
+              <span class="account-user-inner">
+                <span class="account-user-name">Dominic Keller</span>
+                <span class="account-position">Founder</span>
+              </span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown03">
+              <li><a class="dropdown-item" href="#">Accounts</a></li>
+              <li><a class="dropdown-item" href="#">Preferences</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">
+                <span class="material-icons-outlined me-2 fs-5">logout</span>
+                Logout
+              </a></li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFilter">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title" id="">Search</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="form-group">
+        <label for="" class="form-label">PO Number</label>
+        <input type="text" class="form-control" id="" placeholder="">
+      </div>
+
+      <div class="form-group">
+        <label for="" class="form-label">Buyer Name</label>
+        <input type="text" class="form-control" id="" placeholder="">
+      </div>
+
+      <div class="form-group">
+        <label for="" class="form-label">Part Description</label>
+        <input type="text" class="form-control" id="" placeholder="">
+      </div>
+
+      <div class="form-group">
+        <label for="" class="form-label">Supplier Name</label>
+        <input type="text" class="form-control" id="" placeholder="">
+      </div>
+    </div>
+    <div class="offcanvas-footer p-3 border-top">
+      <button class="btn btn-primary w-100" data-bs-dismiss="offcanvas">Submit</button>
+    </div>
+  </div>
+
+  <div class="contentWrap">
+
+    <div class="page-heading">
+      <div class="page-heading-inner">
+        <h6 class="page-title">Awaiting Approval Purchase Orders</h6>
+        <nav style="--bs-breadcrumb-divider: '\e409';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Awaiting Approval</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="btn-toolbar">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilter" aria-controls="offcanvasFilter">
+        <span class="material-icons-outlined">search</span>
+      </button>
+      </div>
+    </div>
+
+    <div class="contentInnerWrap">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+        <div class="col">
+          <div class="card order-card">
+            <div class="card-header">
+              <div class="card-header-inner">
+                <h6 class="ordernum mb-1">#5281-OP-00200</h6>
+                <h6 class="user mb-0">Jensen Bennett</h6>
+              </div>
+              <div class="card-header-action">
+                <a href="details.html" class="btn btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Details">
+                  <span class="material-icons-outlined">visibility</span>
+                </a>
+                <a href="history.html" class="btn btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="History">
+                  <span class="material-icons-outlined">history</span>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Order Amount</span>
+                    <span class="order-informationitemtext">$3200.23</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Order Date</span>
+                    <span class="order-informationitemtext">30Nov, 2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Request Date</span>
+                    <span class="order-informationitemtext">30Nov, 2021</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Promised Date</span>
+                    <span class="order-informationitemtext">30Nov, 2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Created on</span>
+                    <span class="order-informationitemtext">32days, 20:59:41</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Last Approved</span>
+                    <span class="order-informationitemtext">5days</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Supplier</span>
+                    <span class="order-informationitemtext text-truncate">Packaging Corporation of America</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Last Approver</span>
+                    <div class="dropdown">
+                      <button class="btn order-informationitemtext p-0 dropdown-toggle" type="button" id="dropdownMenuapprover" data-bs-toggle="dropdown" aria-expanded="false">
+                        Approval Path
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuapprover">
+                        <li>
+                          <a class="dropdown-item order-informationitemtext" href="#">
+                            User02 - <span class="text-danger">Rejected</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item order-informationitemtext" href="#">
+                            User03 - <span class="text-success">Approved</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item order-informationitemtext" href="#">
+                            User04 - <span class="text-warning">Awaiting</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-href="delegate-modal.html" data-bs-target="#myModal">
+                <span class="material-icons-outlined">hub</span>
+                <span class="btn-text">Delegate</span>
+              </button>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-href="attachment-modal.html" data-bs-target="#myModal">
+                <span class="material-icons-outlined">attachment</span>
+                <span class="btn-text">Attachment</span>
+              </button>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#statusActionModal" data-bs-whatever="Approval">
+                <span class="material-icons-outlined">thumb_up</span>
+                <span class="btn-text">Approve</span>
+              </button>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#statusActionModal" data-bs-whatever="Rejected">
+                <span class="material-icons-outlined">thumb_down</span>
+                <span class="btn-text">Reject</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card order-card">
+            <div class="card-header">
+              <div class="card-header-inner">
+                <h6 class="ordernum mb-1">#5201-OP-00100</h6>
+                <h6 class="user mb-0">Lindsay Castaneda</h6>
+              </div>
+              <div class="card-header-action">
+                <a href="details.html" class="btn btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Details">
+                  <span class="material-icons-outlined">visibility</span>
+                </a>
+                <a href="history.html" class="btn btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="History">
+                  <span class="material-icons-outlined">history</span>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Order Amount</span>
+                    <span class="order-informationitemtext">$3200.23</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Order Date</span>
+                    <span class="order-informationitemtext">30Nov, 2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Request Date</span>
+                    <span class="order-informationitemtext">30Nov, 2021</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Promised Date</span>
+                    <span class="order-informationitemtext">30Nov, 2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Created on</span>
+                    <span class="order-informationitemtext">32days, 20:59:41</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Last Approved</span>
+                    <span class="order-informationitemtext">5days</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Supplier</span>
+                    <span class="order-informationitemtext text-truncate">Packaging Corporation of America</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Last Approver</span>
+                    <div class="dropdown">
+                      <button class="btn order-informationitemtext p-0 dropdown-toggle" type="button" id="dropdownMenuapprover" data-bs-toggle="dropdown" aria-expanded="false">
+                        Approval Path
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuapprover">
+                        <li>
+                          <a class="dropdown-item order-informationitemtext" href="#">
+                            User02 - <span class="text-danger">Rejected</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item order-informationitemtext" href="#">
+                            User03 - <span class="text-success">Approved</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item order-informationitemtext" href="#">
+                            User04 - <span class="text-warning">Awaiting</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-href="delegate-modal.html" data-bs-target="#myModal">
+                <span class="material-icons-outlined">hub</span>
+                <span class="btn-text">Delegate</span>
+              </button>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-href="attachment-modal.html" data-bs-target="#myModal">
+                <span class="material-icons-outlined">attachment</span>
+                <span class="btn-text">Attachment</span>
+              </button>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#statusActionModal" data-bs-whatever="Approval">
+                <span class="material-icons-outlined">thumb_up</span>
+                <span class="btn-text">Approve</span>
+              </button>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#statusActionModal" data-bs-whatever="Rejected">
+                <span class="material-icons-outlined">thumb_down</span>
+                <span class="btn-text">Reject</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card order-card">
+            <div class="card-header">
+              <div class="card-header-inner">
+                <h6 class="ordernum mb-1">#8927-OP-00200</h6>
+              <h6 class="user mb-0">Kairon Whitehouse</h6>
+              </div>
+              <div class="card-header-action">
+                <a href="details.html" class="btn btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Details">
+                  <span class="material-icons-outlined">visibility</span>
+                </a>
+                <a href="history.html" class="btn btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="History">
+                  <span class="material-icons-outlined">history</span>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Order Amount</span>
+                    <span class="order-informationitemtext">$3200.23</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Order Date</span>
+                    <span class="order-informationitemtext">30Nov, 2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Request Date</span>
+                    <span class="order-informationitemtext">30Nov, 2021</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Promised Date</span>
+                    <span class="order-informationitemtext">30Nov, 2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Created on</span>
+                    <span class="order-informationitemtext">32days, 20:59:41</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Last Approved</span>
+                    <span class="order-informationitemtext">5days</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Supplier</span>
+                    <span class="order-informationitemtext text-truncate">Packaging Corporation of America</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Last Approver</span>
+                    <div class="dropdown">
+                      <button class="btn order-informationitemtext p-0 dropdown-toggle" type="button" id="dropdownMenuapprover" data-bs-toggle="dropdown" aria-expanded="false">
+                        Approval Path
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuapprover">
+                        <li>
+                          <a class="dropdown-item order-informationitemtext" href="#">
+                            User02 - <span class="text-danger">Rejected</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item order-informationitemtext" href="#">
+                            User03 - <span class="text-success">Approved</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item order-informationitemtext" href="#">
+                            User04 - <span class="text-warning">Awaiting</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-href="delegate-modal.html" data-bs-target="#myModal">
+                <span class="material-icons-outlined">hub</span>
+                <span class="btn-text">Delegate</span>
+              </button>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-href="attachment-modal.html" data-bs-target="#myModal">
+                <span class="material-icons-outlined">attachment</span>
+                <span class="btn-text">Attachment</span>
+              </button>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#statusActionModal" data-bs-whatever="Approval">
+                <span class="material-icons-outlined">thumb_up</span>
+                <span class="btn-text">Approve</span>
+              </button>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#statusActionModal" data-bs-whatever="Rejected">
+                <span class="material-icons-outlined">thumb_down</span>
+                <span class="btn-text">Reject</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card order-card">
+            <div class="card-header">
+              <div class="card-header-inner">
+                <h6 class="ordernum mb-1">#7373-OP-00200</h6>
+              <h6 class="user mb-0">Katherine Metcalfe</h6>
+              </div>
+              <div class="card-header-action">
+                <a href="details.html" class="btn btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Details">
+                  <span class="material-icons-outlined">visibility</span>
+                </a>
+                <a href="history.html" class="btn btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="History">
+                  <span class="material-icons-outlined">history</span>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Order Amount</span>
+                    <span class="order-informationitemtext">$3200.23</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Order Date</span>
+                    <span class="order-informationitemtext">30Nov, 2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Request Date</span>
+                    <span class="order-informationitemtext">30Nov, 2021</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Promised Date</span>
+                    <span class="order-informationitemtext">30Nov, 2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Created on</span>
+                    <span class="order-informationitemtext">32days, 20:59:41</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Last Approved</span>
+                    <span class="order-informationitemtext">5days</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Supplier</span>
+                    <span class="order-informationitemtext text-truncate">Packaging Corporation of America</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Last Approver</span>
+                    <div class="dropdown">
+                      <button class="btn order-informationitemtext p-0 dropdown-toggle" type="button" id="dropdownMenuapprover" data-bs-toggle="dropdown" aria-expanded="false">
+                        Approval Path
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuapprover">
+                        <li>
+                          <a class="dropdown-item order-informationitemtext" href="#">
+                            User02 - <span class="text-danger">Rejected</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item order-informationitemtext" href="#">
+                            User03 - <span class="text-success">Approved</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item order-informationitemtext" href="#">
+                            User04 - <span class="text-warning">Awaiting</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-href="delegate-modal.html" data-bs-target="#myModal">
+                <span class="material-icons-outlined">hub</span>
+                <span class="btn-text">Delegate</span>
+              </button>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-href="attachment-modal.html" data-bs-target="#myModal">
+                <span class="material-icons-outlined">attachment</span>
+                <span class="btn-text">Attachment</span>
+              </button>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#statusActionModal" data-bs-whatever="Approval">
+                <span class="material-icons-outlined">thumb_up</span>
+                <span class="btn-text">Approve</span>
+              </button>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#statusActionModal" data-bs-whatever="Rejected">
+                <span class="material-icons-outlined">thumb_down</span>
+                <span class="btn-text">Reject</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card order-card">
+            <div class="card-header">
+              <div class="card-header-inner">
+                <h6 class="ordernum mb-1">#2323-OP-00200</h6>
+              <h6 class="user mb-0">Vincenzo Sutherland</h6>
+              </div>
+              <div class="card-header-action">
+                <a href="details.html" class="btn btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Details">
+                  <span class="material-icons-outlined">visibility</span>
+                </a>
+                <a href="history.html" class="btn btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="History">
+                  <span class="material-icons-outlined">history</span>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Order Amount</span>
+                    <span class="order-informationitemtext">$3200.23</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Order Date</span>
+                    <span class="order-informationitemtext">30Nov, 2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Request Date</span>
+                    <span class="order-informationitemtext">30Nov, 2021</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Promised Date</span>
+                    <span class="order-informationitemtext">30Nov, 2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Created on</span>
+                    <span class="order-informationitemtext">32days, 20:59:41</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Last Approved</span>
+                    <span class="order-informationitemtext">5days</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Supplier</span>
+                    <span class="order-informationitemtext text-truncate">Packaging Corporation of America</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Last Approver</span>
+                    <div class="dropdown">
+                      <button class="btn order-informationitemtext p-0 dropdown-toggle" type="button" id="dropdownMenuapprover" data-bs-toggle="dropdown" aria-expanded="false">
+                        Approval Path
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuapprover">
+                        <li>
+                          <a class="dropdown-item order-informationitemtext" href="#">
+                            User02 - <span class="text-danger">Rejected</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item order-informationitemtext" href="#">
+                            User03 - <span class="text-success">Approved</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item order-informationitemtext" href="#">
+                            User04 - <span class="text-warning">Awaiting</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-href="delegate-modal.html" data-bs-target="#myModal">
+                <span class="material-icons-outlined">hub</span>
+                <span class="btn-text">Delegate</span>
+              </button>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-href="attachment-modal.html" data-bs-target="#myModal">
+                <span class="material-icons-outlined">attachment</span>
+                <span class="btn-text">Attachment</span>
+              </button>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#statusActionModal" data-bs-whatever="Approval">
+                <span class="material-icons-outlined">thumb_up</span>
+                <span class="btn-text">Approve</span>
+              </button>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#statusActionModal" data-bs-whatever="Rejected">
+                <span class="material-icons-outlined">thumb_down</span>
+                <span class="btn-text">Reject</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card order-card">
+            <div class="card-header">
+              <div class="card-header-inner">
+                <h6 class="ordernum mb-1">#5281-OP-20200</h6>
+              <h6 class="user mb-0">Bridie Donovan</h6>
+              </div>
+              <div class="card-header-action">
+                <a href="details.html" class="btn btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Details">
+                  <span class="material-icons-outlined">visibility</span>
+                </a>
+                <a href="history.html" class="btn btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="History">
+                  <span class="material-icons-outlined">history</span>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Order Amount</span>
+                    <span class="order-informationitemtext">$3200.23</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Order Date</span>
+                    <span class="order-informationitemtext">30Nov, 2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Request Date</span>
+                    <span class="order-informationitemtext">30Nov, 2021</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Promised Date</span>
+                    <span class="order-informationitemtext">30Nov, 2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Created on</span>
+                    <span class="order-informationitemtext">32days, 20:59:41</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Last Approved</span>
+                    <span class="order-informationitemtext">5days</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Supplier</span>
+                    <span class="order-informationitemtext text-truncate">Packaging Corporation of America</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col">
+                  <div class="order-informationitem">
+                    <span class="order-informationitemlabel">Last Approver</span>
+                    <div class="dropdown">
+                      <button class="btn order-informationitemtext p-0 dropdown-toggle" type="button" id="dropdownMenuapprover" data-bs-toggle="dropdown" aria-expanded="false">
+                        Approval Path
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuapprover">
+                        <li>
+                          <a class="dropdown-item order-informationitemtext" href="#">
+                            User02 - <span class="text-danger">Rejected</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item order-informationitemtext" href="#">
+                            User03 - <span class="text-success">Approved</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item order-informationitemtext" href="#">
+                            User04 - <span class="text-warning">Awaiting</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-href="delegate-modal.html" data-bs-target="#myModal">
+                <span class="material-icons-outlined">hub</span>
+                <span class="btn-text">Delegate</span>
+              </button>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-href="attachment-modal.html" data-bs-target="#myModal">
+                <span class="material-icons-outlined">attachment</span>
+                <span class="btn-text">Attachment</span>
+              </button>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#statusActionModal" data-bs-whatever="Approval">
+                <span class="material-icons-outlined">thumb_up</span>
+                <span class="btn-text">Approve</span>
+              </button>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#statusActionModal" data-bs-whatever="Rejected">
+                <span class="material-icons-outlined">thumb_down</span>
+                <span class="btn-text">Reject</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="row my-3">
+        <div class="col-12 text-center">
+          <button class="btn btn-outline-dark btn-sm px-3 fw-normal">Load More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="modal fade" id="statusActionModal" tabindex="-1" aria-labelledby="statusActionModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="statusActionModalLabel">Comment</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Your Comments</label>
+            <textarea class="form-control" id="message-text" rows="5"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    </div>
+  </div>
+</div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

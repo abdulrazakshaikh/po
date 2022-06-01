@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="img/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Icon Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+
+  <nav class="navbar navbar-dark bg-dark navbar-header navbar-expand" aria-label="">
+    <div class="container-fluid h-100">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/Icrux-Logo.png" class="img-fluid" alt="">
+      </a>
+      <ul class="navbar-nav ms-auto h-100">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-account dropdown-toggle" href="javascript:void(0)" id="dropdownnotification" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="material-icons-outlined">notifications</span>
+            </a>
+            <div class="dropdown-menu noti-dropdown dropdown-menu-end" aria-labelledby="dropdownnotification">
+              <div class="noti-header">
+                <h6 class="noti-header-title">Notification</h6>
+                <button class="btn btn-sm btn-clear">Clear All</button>
+              </div>
+              <div class="noti-body scroll-list">
+                <ul class="list-unstyled noti-list">
+                  <li class="noti-list-item">
+                    <a href="details.html" class="noti-item-link">
+                      <span class="noti-ordernum">Order No. : #5281-OP-00200</span>
+                      <p class="noti-text"><span class="user">Jensen Bennett</span> has requested for Approval for the order.</p>
+                    </a>
+                  </li>
+                  <li class="noti-list-item">
+                    <a href="details.html" class="noti-item-link">
+                      <span class="noti-ordernum">Order No. : #5201-OP-00100</span>
+                      <p class="noti-text"><span class="user">Lindsay Castaneda</span> has delegated the order to you</p>
+                    </a>
+                  </li>
+                  <li class="noti-list-item">
+                    <a href="details.html" class="noti-item-link">
+                      <span class="noti-ordernum">Order No. : #4181-OP-00400</span>
+                      <p class="noti-text"><span class="user">Vincenzo Sutherland</span> has requested for Approval for the order</p>
+                    </a>
+                  </li>
+                  <li class="noti-list-item">
+                    <a href="details.html" class="noti-item-link">
+                      <span class="noti-ordernum">Order No. : #4181-OP-00400</span>
+                      <p class="noti-text"><span class="user">Vincenzo Sutherland</span> has requested for Approval for the order</p>
+                    </a>
+                  </li>
+                  <li class="noti-list-item">
+                    <a href="details.html" class="noti-item-link">
+                      <span class="noti-ordernum">Order No. : #4181-OP-00400</span>
+                      <p class="noti-text"><span class="user">Vincenzo Sutherland</span> has requested for Approval for the order</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="noti-footer">
+                <a class="btn btn-viewall" href="#">View All</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-account dropdown-toggle" href="javascript:void(0)" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="account-user-avatar"> 
+                <img src="img/default-avatar.jpg" alt="user-image" class="">
+              </span>
+              <span class="account-user-inner">
+                <span class="account-user-name">Dominic Keller</span>
+                <span class="account-position">Founder</span>
+              </span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown03">
+              <li><a class="dropdown-item" href="#">Accounts</a></li>
+              <li><a class="dropdown-item" href="#">Preferences</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">
+                <span class="material-icons-outlined me-2 fs-5">logout</span>
+                Logout
+              </a></li>
+            </ul>
+          </li>
+          
+        </ul>
+    </div>
+  </nav>
+
+  <div class="contentWrap">
+    <div class="row g-3">
+      <div class="col-12 col-md-7">
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <a href="awaiting-approval.html" class="card dashcard bg-blue">
+              <div class="card-body">
+                <h6 class=" mb-2 dashcard-title">Awaiting My Approval</h6>
+                <div class="d-flex">
+                  <div class="flex-shrink-0 ">
+                    <div class="dashcard-icon "> 
+                      <i class="material-icons-outlined">schedule</i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h6 class="dashcard-count mb-0">32</h6> 
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6">
+            <a href="#" class="card dashcard bg-green ">
+              <div class="card-body">
+                <h6 class=" mb-2 dashcard-title">Approved</h6>
+                <div class="d-flex">
+                  <div class="flex-shrink-0 ">
+                    <div class="dashcard-icon"> 
+                      <i class="material-icons-outlined">thumb_up</i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h6 class="dashcard-count mb-0">18</h6> 
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6">
+            <a href="#" class="card dashcard bg-red">
+              <div class="card-body">
+                <h6 class=" mb-2 dashcard-title">Rejected</h6>
+                <div class="d-flex">
+                  <div class="flex-shrink-0 ">
+                    <div class="dashcard-icon "> 
+                      <i class="material-icons-outlined">thumb_down</i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h6 class="dashcard-count mb-0">32</h6> 
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6">
+            <a href="#" class="card dashcard bg-orange">
+              <div class="card-body">
+                <h6 class=" mb-2 dashcard-title">Delegated</h6>
+                <div class="d-flex">
+                  <div class="flex-shrink-0 ">
+                    <div class="dashcard-icon "> 
+                      <i class="material-icons-outlined">hub</i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h6 class="dashcard-count mb-0">4</h6> 
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-5">
+        <div class="card chart-card shadow border-0">
+          <div class="card-body">
+            <canvas id="myChart" height="450px;" class="mx-auto"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+
+  const data = {
+  labels: [
+    'Awaiting',
+    'Approved',
+    'Rejected',
+    'Delegated'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [32, 18, 32, 4],
+    backgroundColor: [
+      'rgb(3 155 229)',
+      'rgb(76 175 80)',
+      'rgb(218 53 41)',
+      'rgb(255 152 0)'
+    ],
+    hoverOffset: 5
+  }]
+};
+
+  const config = {
+    type: 'pie',
+    data: data,
+    options: {
+      responsive: false
+    }
+  };
+
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+</script>    
+  </body>
+</html>
